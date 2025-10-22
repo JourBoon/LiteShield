@@ -1,0 +1,12 @@
+server:
+  port: "8090"
+
+clients:
+  - id: acme
+    backendURL: "http://localhost:8081"
+    defaultTTL: "60s"
+    rateRPS: 100
+  - id: beta
+    backendURL: "http://localhost:8082"
+    defaultTTL: "30s"
+    rateRPS: 100
